@@ -180,16 +180,10 @@ In order to communicate events—such as a push—with your Cloud Git server, yo
 
 After configuring the Bitbucket integration, test it by pushing a simple change to your Bitbucket repository.
 
-1. Create a test file.
-
-   ```bash
-   touch test.md
-   ```
-
 1. Commit and push the change to your Bitbucket repository.
 
    ```bash
-   git add . && git commit -m "Testing Bitbucket integration" && git push
+   git commit --allow-empty -m "Testing Bitbucket integration" && git push
    ```
 
 1. Log in to the [Project Web Interface]({{ page.baseurl }}/cloud/project/project-webint-basic.html) and verify that your commit message is displayed and your project deploying.
